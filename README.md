@@ -45,7 +45,11 @@
   - Shared Web Hosting luôn là giải pháp phù hợp cho các cá nhân hoặc doanh nghiệp muốn có một website giới thiệu, giao dịch thương mại trên Internet một cách hiệu quả và tiết kiệm chi phí.
     - **Windows Hosting**: Windows hosting Hỗ trợ **nhiều ngôn ngữ lập trình** với các phiên bản khác nhau. **Miễn phí tạo, quản lý hộp thư điện tử (Email)** theo tên miền riêng. **Miễn phí tạo tên miền con (Subdomain)**. Sử dụng **nhiều tên miền** cho 1 website. Quản lý **nhiều website** trên cùng 1 tài khoản hosting. Quản lý đăng nhập, **giám sát thông số** băng thông và dung lượng. **Sao lưu dự phòng** và khôi phục dữ liệu.
     - **Linux Hosting**: Giống Wordpress Hosting, Hosting Linux hỗ trợ **nhiều ngôn ngữ lập trình** với các phiên bản khác nhau. **Miễn phí tạo, quản lý hộp thư điện tử (Email)** theo tên miền riêng. **Miễn phí tạo tên miền con (Subdomain)**. Sử dụng **nhiều tên miền** cho 1 website. Quản lý **nhiều website** trên cùng 1 tài khoản hosting linux nhằm giảm chi phí thuê hosting. Quản lý đăng nhập, **giám sát thông số** băng thông và dung lượng. **Sao lưu dự phòng** và khôi phục dữ liệu.
-    
+    - **Wordpress Hosting**: Hệ thống Wordpress Hosting của Nhân Hòa sử dụng 100% ổ cứng SSD Enterprise, kết hợp với LiteSpeed Webserver/ Memcached/ Redis giúp tối ưu hóa tốt nhất cho Wordpress. Dữ liệu của khách hàng được sao lưu liên tục hằng ngày trong 15 ngày gần nhất. Ngoài ra khách hàng có thể chủ động sao lưu dữ liệu bất kỳ lúc nào chỉ với 1 click chuột. Hệ thống vận hành trên nền tảng điện toán đám mây ưu việt, khắc phục triệt để các tồn tại của các giải pháp lưu trữ thông thường, đảm bảo thời gian online gần như tuyệt đối. Đội ngũ chuyên gia hàng đầu về dịch vụ luôn túc trực 24/7/365 hỗ trợ khách hàng trong suốt quá trình sử dụng.
+  ##### 3. SSL(Secure Sockets Layer-Bảo mật web)
+   - SSL là viết tắt của từ Secure Sockets Layer. Đây là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết giữa máy chủ web và trình duyệt. Liên kết này đảm bảo tất cả dữ liệu trao đổi giữa máy chủ web và trình duyệt luôn được bảo mật và an toàn.
+   - SSL đảm bảo rằng tất cả các dữ liệu được truyền giữa các máy chủ web và các trình duyệt được mang tính riêng tư, tách rời. SSL là một chuẩn công nghệ được sử dụng bởi hàng triệu trang web trong việc bảo vệ các giao dịch trực tuyến với khách hàng của họ.
+    - **Comodo SSL**: 
 
 
     

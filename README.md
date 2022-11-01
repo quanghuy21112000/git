@@ -47,8 +47,8 @@
     - **Linux Hosting**: Giống Wordpress Hosting, Hosting Linux hỗ trợ **nhiều ngôn ngữ lập trình** với các phiên bản khác nhau. **Miễn phí tạo, quản lý hộp thư điện tử (Email)** theo tên miền riêng. **Miễn phí tạo tên miền con (Subdomain)**. Sử dụng **nhiều tên miền** cho 1 website. Quản lý **nhiều website** trên cùng 1 tài khoản hosting linux nhằm giảm chi phí thuê hosting. Quản lý đăng nhập, **giám sát thông số** băng thông và dung lượng. **Sao lưu dự phòng** và khôi phục dữ liệu.
     - **Wordpress Hosting**: Hệ thống Wordpress Hosting của Nhân Hòa sử dụng 100% ổ cứng SSD Enterprise, kết hợp với LiteSpeed Webserver/ Memcached/ Redis giúp tối ưu hóa tốt nhất cho Wordpress. Dữ liệu của khách hàng được sao lưu liên tục hằng ngày trong 15 ngày gần nhất. Ngoài ra khách hàng có thể chủ động sao lưu dữ liệu bất kỳ lúc nào chỉ với 1 click chuột. Hệ thống vận hành trên nền tảng điện toán đám mây ưu việt, khắc phục triệt để các tồn tại của các giải pháp lưu trữ thông thường, đảm bảo thời gian online gần như tuyệt đối. Đội ngũ chuyên gia hàng đầu về dịch vụ luôn túc trực 24/7/365 hỗ trợ khách hàng trong suốt quá trình sử dụng.
   #### 3. SSL(Secure Sockets Layer-Bảo mật web)
-   - SSL là viết tắt của từ Secure Sockets Layer. Đây là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết giữa máy chủ web và trình duyệt. Liên kết này đảm bảo tất cả dữ liệu trao đổi giữa máy chủ web và trình duyệt luôn được bảo mật và an toàn.
-   - SSL đảm bảo rằng tất cả các dữ liệu được truyền giữa các máy chủ web và các trình duyệt được mang tính riêng tư, tách rời. SSL là một chuẩn công nghệ được sử dụng bởi hàng triệu trang web trong việc bảo vệ các giao dịch trực tuyến với khách hàng của họ.
+  - SSL là viết tắt của từ Secure Sockets Layer. Đây là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết giữa máy chủ web và trình duyệt. Liên kết này đảm bảo tất cả dữ liệu trao đổi giữa máy chủ web và trình duyệt luôn được bảo mật và an toàn.
+  - SSL đảm bảo rằng tất cả các dữ liệu được truyền giữa các máy chủ web và các trình duyệt được mang tính riêng tư, tách rời. SSL là một chuẩn công nghệ được sử dụng bởi hàng triệu trang web trong việc bảo vệ các giao dịch trực tuyến với khách hàng của họ.
     - **Comodo SSL**: Loại bỏ nguy cơ bị hacker khai thác với cơ chế mã hóa dữ liệu. Khẳng định thương hiệu và uy tín website của bạn trên internet. Được Google đánh giá và xếp hạng ưu tiên khi tìm kiếm SEO. Đáp ứng tiêu chuẩn bảo mật PCI/DSS với thanh toán trực tuyến. Tạo dựng niềm tin với khách hàng khi giao dịch trên website.   Quy trình xác thực và cài đặt chứng chỉ số SSL nhanh gọn.
     - **Geo Trust SSL**: GeoTrust SSL có khả năng tương thích trình duyệt hoàn hảo trong tất cả các trình duyệt và thiết bị di động hiện đại. Bạn sẽ nhận được một logo con dấu trang web năng động với mỗi đơn hàng để thu hút khách hàng tiềm năng của bạn. Geo Trust SSL cung cấp tất cả các tính năng tiêu chuẩn như phát hành lại miễn phí không giới hạn và bảo đảm hoàn lại tiền trong 30 ngày.
     - **Digicert SSL**: Thương hiệu mọi người đều tin tưởng, công nghệ mã hóa hàng đầu, sản phẩm SSL DigiCert rất đa dạng, tương thích trình duyệt lên đến 99+%, bảo hành với giá trị cực cao.
@@ -64,7 +64,22 @@
    - **Bảng giá Email Microsoft (Email 365)**:[Bảng giá](https://nhanhoa.com/email365.html).
    - **Bảng giá Email server riêng**: [Bảng giá](https://nhanhoa.com/email/email-server.html).
    - **Tóm tắt dịch vụ Mail**: [Dịch vụ Mail là gì?](https://nhanhoa.com/email/gioi-thieu-dich-vu-email.html).
+#### 5. Dịch vụ Máy chủ 
+  - Hệ thống server vật lý sử dụng 100% ổ cứng SSD đảm bảo tốc độ truy xuất vượt trội lên tới 40 lần so với ổ cứng thông thường.
+   - **Dịch vụ máy chủ**
+      - SSD Cloud VPS
+      - SSD Cloud Server
+      - Dedicated Server
+      - Thuê chỗ đặt máy chủ
+   - **Giải pháp máy chủ**
+      - Private Cloud
+      - Virtual Private Cloud (VPC)
+   - **Dịch vụ cộng thêm**
+      - Cloud Backup
+      - BackUp 365
+      - Quản lý máy chủ 
+      - Cân bằng tải máy chủ
+    
    
-      
     
     

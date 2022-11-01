@@ -80,7 +80,17 @@
       - Quản lý máy chủ 
       - Cân bằng tải máy chủ
 #### 6. Dịch vụ thiết kế Web
-   - **Lợi ích khởi tạo website bán hàng**: 
+   - **Lợi ích khởi tạo website bán hàng**
+      - **Nhanh chóng định vị thương hiệu**: Trong thời đại bùng nổ công nghệ thông tin như hiện nay, website được coi là đại sứ thương hiệu của doanh nghiệp trên internet, giúp đơn vị quảng bá thương hiệu, tạo dựng uy tín, tạo lợi thế cạnh tranh và khẳng định vị thế trên thương trường.
+      - **Giảm tối đa chi phí quản lý khi tạo website**: Việc mở thêm cửa hang online/văn phòng ảo trực tuyến bên cạnh cửa hàng offline truyền thống giúp doang nghiệp mở rộng thị trường tiết kiệm tối đa thời gian quản lý hàng hóa, tiết kiệm chi phí quảng cáo, thuê mặt bằng, thuê nhân viên.
+      - **Cập nhật thông tin nhanh chóng**: Với hệ thông quản trị website thông minh, đơn giản, người dùng có thể chủ động thay đổi/ chỉnh sửa/ update tất cả các thông tin mình mong muốn lên website chỉ bằng vài thao tác, ở bất cứ đâu, trong bất cứ thời điểm nào.
+      - **Gia tăng doanh số bán hàng nhanh chóng**: Có hơn 60000 khách hàng đã sử dụng dịch vụ thiết kế website bán hàng TMĐT chuẩn SEO trên **Web4S** đều hài lòng khi nhận thấy doanh số bán hàng có chuyển biến tích cực, thậm chí tăng lên đến hơn 65% kể từ khi tạo website.
+      - **Tiếp cận khách hàng dễ dàng, tương tác ngay tức thời**: Thiết kế website chuyên nghiệp giúp doanh nghiệp có thể mở cửa bán hàng 24/24, từ đó gia tăng cơ hội tiếp cận khách hàng tiềm năng ở khắp mọi nơi và dễ dàng tương tác, giải đáp thắc mắc hay tư vấn cho khách hàng ngay lập tức.
+   - **Bộ giải pháp chuyển dổi số doanh nghiệp Web4S**
+      - **Tên miền**: Giải pháp xây dựng bảo vệ thương hiệu trực tuyến tốt nhất của doanh nghiệp trên Internet.
+      - **Lưu trữ Hosting/ máy chủ Cloud**: Giải pháp lưu trữ website hiệu quả, tiết kiệm chi phí bao gồm Windows Hosting, Linux Hosting, WordPress Hosting.
+      - **Bộ nhận diện thương hiệu**: Thiết kế logo, banner, ứng dụng văn phòng,... giải pháp gia tăng độ uy tín cho doanh nghiệp, tạo dấu ấn với khách hàng và khác biệt với đối thủ.
+      - **Dịch vụ khác**: Cung cấp các gói giải pháp quảng cáo như Umail, tổng đài Vfone, SSL, tổng đài IP, Hóa đơn điện tử.
    
     
     

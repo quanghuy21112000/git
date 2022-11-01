@@ -55,7 +55,16 @@
     - **Tóm tắt SSL**: [SSL là gì](https://nhanhoa.com/ssl-bao-mat/gioi-thieu-ssl.html).
   #### 4. Dịch vụ Email 
    - Để có một hệ thống email chuyên nghiệp, tin cậy các tổ chức/ doanh nghiệp nên sử dụng dịch vụ email từ các nhà cung cấp có uy tín và kinh nghiệm.
-     - **Dịch vụ email UMAIL**:  
-
+     - **Dịch vụ email UMAIL**
+        - **Nâng tầm thương hiệu**: **Khẳng định thương hiệu** Email của bạn sẽ chuyên nghiệp hơn với dạng tên miền riêng abc@tencongty.com (vd info@umail.vn) chứ không còn đơn điệu như trước đây. **Bảo mật an toàn** Email người dùng được mã hóa trong suốt quá trình truyền tải. Ngoài ra UMail thay đổi cổng kết nối POP3/ IMAP bằng SSL/ TLS giúp nâng cao tính năng bảo mật. **Di chuyển email dễ dàng** UMail với tùy chọn di chuyển qua máy chủ IMAP/ POP giúp bạn có thể chuyển đổi dễ dàng tất cả email cũ sang UMail để có những trải nghiệm đỉnh cao. **Hỗ trợ kỹ thuật 24/7** đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng.
+        - **Quản trị mạnh mẽ**: **Chứng thực email** chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.**Quản lý chuyên nghiệp** trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.**Không lo bỏ sót** cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào. **Hoạt động xuyên suốt** luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
+        - **Nhiều tính năng hữu ích**: **Bộ lọc thư rác** với bộ lọc thư rác/ spam thông minh, UMail giúp bạn không phải mất thời gian để đọc và xóa những email không mong muốn, tập trung hơn vào công việc chính. **Chuyển hướng tự động** dễ dàng tạo quy tắc để tự động chuyển hướng email người gửi vào đúng thư mục chỉ định, giúp hộp thư của bạn chuyên nghiệp và gọn gàng hơn. **Tìm kiếm tất cả** không phải khó khăn tìm từng email, tìm kiếm nhanh chóng theo tất cả những gì bạn muốn từ nội dung, chủ đề, tên, địa chỉ mail,…. **Ứng dụng chuyên nghiệp** giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
+   - **Bảng giá Email Hosting**:[Bảng giá](https://nhanhoa.com/email/email-hosting.html).
+   - **Bảng giá Email GG Workspace (GSuite)**:[Bảng giá](https://nhanhoa.com/google-workspace.html).
+   - **Bảng giá Email Microsoft (Email 365)**:[Bảng giá](https://nhanhoa.com/email365.html).
+   - **Bảng giá Email server riêng**: [Bảng giá](https://nhanhoa.com/email/email-server.html).
+   - **Tóm tắt dịch vụ Mail**: [Dịch vụ Mail là gì?](https://nhanhoa.com/email/gioi-thieu-dich-vu-email.html).
+   
+      
     
     

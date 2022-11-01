@@ -63,18 +63,167 @@
   
   - SSL là viết tắt của từ Secure Sockets Layer. Đây là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết giữa máy chủ web và trình duyệt. Liên kết này đảm bảo tất cả dữ liệu trao đổi giữa máy chủ web và trình duyệt luôn được bảo mật và an toàn.
   - SSL đảm bảo rằng tất cả các dữ liệu được truyền giữa các máy chủ web và các trình duyệt được mang tính riêng tư, tách rời. SSL là một chuẩn công nghệ được sử dụng bởi hàng triệu trang web trong việc bảo vệ các giao dịch trực tuyến với khách hàng của họ.
+  - SSL làm việc như thế nào?
+    + Công nghệ SSL bảo vệ những giao dịch trực tuyến và nâng cao mức độ tin cậy của website đối với khách hàng chỉ trong 3 bước cơ bản:
+    + SSL mã hóa các thông tin nhạy cảm trong quá trình giao dịch trực tuyến.
+    + Mỗi chứng chỉ SSL được tạo ra cho một Website duy nhất.
+    + Một cơ quan uy tín đã xác thực danh tính của chủ nhân Website trước khi cấp chứng chỉ SSL
+    + Những gì xảy ra khi một máy tính kết nối với một Website đã được chứng thực ?
+    + Đầu tiên trình duyệt yêu cầu Website cung cấp thông tin xác nhận danh tính
+    + Sau đó Website gửi cho trình duyệt chứng chỉ SSL của nó đã được cấp.
+    + Trình duyệt kiểm tra chứng chỉ SSL có thực hay không. Nếu đúng, nó thông báo lại cho Website là SSL của nó đã được chấp nhận.
+    + Website gửi ngược lại chữ kí số sẽ dùng để mã hóa và giải mã trong suốt quán trình giao dịch tiếp theo.
+    + Cuối cùng là dữ liệu giữa trình duyệt và website đã được mã hóa.
+- Trình duyệt làm thế nào để kiểm tra một SSL là có thực hay không ?
+    + Khi Website gửi cho trình duyệt một chứng chỉ SSL, trình duyệt sẽ gửi chứng chỉ này đến một máy chủ lưu trữ các chứng chỉ số đã được phê duyệt.
+    + Về mặt kỹ thuật, SSL sử dụng mã hóa công khai. Kỹ thuật này giúp cho Website và trình duyệt tự thỏa thuận (bước 4 ở hình trên) một bộ khóa sẽ dùng trong suốt quá trình trao đổi thông tin sau đó. Bộ khóa sẽ thay đổi theo mỗi trong lần giao dịch kế tiếp, một người khác sẽ không thể giải mã ngay cả khi có được dữ liệu của máy chủ lưu trữ chứng chỉ số nói trên.
+- Tại sao nên sử dụng SSL?
+    + Khi đăng ký domain để sử dụng các dịch vụ website, email v.v... -> luôn có những lỗ hổng bảo mật -> hacker tấn công -> SSL bảo vệ website và khách hàng của bạn.
+    + Bảo mật dữ liệu: dữ liệu được mã hóa và chỉ người nhận đích thực mới có thể giải mã.
+    + Toàn vẹn dữ liệu: dữ liệu không bị thay đổi bởi tin tặc.
+    + Chống chối bỏ: đối tượng thực hiện gửi dữ liệu không thể phủ nhận dữ liệu của mình.
+- Lợi ích khi sử dụng SSL?
+    + Khi đăng ký domain để sử dụng các dịch vụ website, email v.v… -> luôn có những lỗ hổng bảo mật -> hacker tấn công -> SSL bảo vệ website và khách hàng của bạn.
+    + Bảo mật và mã hóa các thông điệp trao đổi giữa trình duyệt và server.
+    + Bảo mật các giao dịch giữa khách hàng và doanh nghiệp, các dịch vụ truy nhập hệ thống.
+    + Bảo mật webmail và các ứng dụng như Outlook Web Acess, Exchange, và Office Communication Server.
+    + Bảo mật các ứng dụng ảo hóa như Citrix Delivery Platform hoặc các ứng dụng điện toán mây.
+    + Bảo mật dịch vụ FTP.
+    + Bảo mật truy cập Control panel.
+    + Bảo mật các dịch vụ truyền dữ liệu trong mạng nội bộ, file sharing, extranet.
+    + Bảo mật VPN Access Servers, Citrix Access Gateway.
+    + Nâng cao hình ảnh, thương hiệu và uy tín doanh nghiệp
+    + Nâng cao thứ hạng website trên kết quả tìm kiếm Google (SEO)
+    + Tạo lợi thế cạnh tranh, tăng niềm tin của khách hàng đối với website, tăng số lượng giao dịch, giá trị giao dịch trực tuyến của khách hàng. Website không được xác thực và bảo mật sẽ luôn ẩn chứa nguy cơ bị xâm nhập dữ liệu, dẫn đến hậu quả khách hàng không tin tưởng sử dụng dịch vụ.
+- DV-SSL
+    + Domain Validation (DV): chứng thư số SSL chứng thực cho Domain Name - Website . Khi 1 Website sử dụng DV SSL thì sẽ được xác thực tên domain , website đã được mã hoá an toàn khi trao đổi dữ liệu
+- OV-SSL
+    + Organization Validation (OV): chứng thư số SSL chứng thực cho Website và xác thực doanh nghiệp đang sở hữu website đó
+- EV-SSL
+    + Extended Validation (EV): cho khách hàng của bạn thấy Website đang sử dụng chứng thư SSL có độ bảo mật cao nhất và được rà soát pháp lý kỹ càng.
+Với thanh đại chỉ sang màu xanh với hiển thị đầy đủ thông tin của công ty, cung cấp một cấp độ cao hơn tin tưởng vào website.
+- Wildcard SSL
+    + Wildcard SSL Certificate : sản phẩm lý tưởng dành cho các cổng thương mại điện tử. Các website dạng này thường có thể tạo ra các trang e-store dành cho các chủ cửa hàng trực tuyến, mỗi e-store là một sub domains và được chia sẻ trên một địa chỉ IP duy nhất. Khi đó, để triển khai giải pháp bảo bảo mật giao dịch trực tuyến (khi đặt hàng, thanh toán, đăng ký & đăng nhập tài khoản,...) bằng SSL, chúng ta có thể dùng duy nhất một chứng chỉ số Wildcard cho tên miền chính của website và dùng chung một địa chỉ IP duy nhất để chia sẻ cho tất cả mọi sub domains.
     - **Comodo SSL**: Loại bỏ nguy cơ bị hacker khai thác với cơ chế mã hóa dữ liệu. Khẳng định thương hiệu và uy tín website của bạn trên internet. Được Google đánh giá và xếp hạng ưu tiên khi tìm kiếm SEO. Đáp ứng tiêu chuẩn bảo mật PCI/DSS với thanh toán trực tuyến. Tạo dựng niềm tin với khách hàng khi giao dịch trên website.   Quy trình xác thực và cài đặt chứng chỉ số SSL nhanh gọn.
+    - Cung cấp 7 gói đăng ký với thông số và mức giá khác nhau để phù hợp với nhiều đối tượng người dùng:
+      + Positive SSL
+      + Positive SSL Multi-domain
+      + Positive SSL Wildcard
+      + Commodo Multi-domain SSL
+      + Comodo EV SSL
+      + Premium SSL Wildcard
+      + Comodo EV Multi Domain SSL
     - **Geo Trust SSL**: GeoTrust SSL có khả năng tương thích trình duyệt hoàn hảo trong tất cả các trình duyệt và thiết bị di động hiện đại. Bạn sẽ nhận được một logo con dấu trang web năng động với mỗi đơn hàng để thu hút khách hàng tiềm năng của bạn. Geo Trust SSL cung cấp tất cả các tính năng tiêu chuẩn như phát hành lại miễn phí không giới hạn và bảo đảm hoàn lại tiền trong 30 ngày.
+    - Cung cấp 9 gói đăng ký với thông số và mức giá khác nhau để phù hợp với nhiều đối tượng người dùng:
+      + Rapid SSL
+      + Quick SSL Premium
+      + Rapid SSL Wildcard
+      + True BusinessID
+      + True BusinessUD with EV
+      + True BusinessID Multi-Domain
+      + QuickSSL Premium Wildcard
+      + True BusinessID Multi-Domain EV
+      + True BusinessID Willcard
     - **Digicert SSL**: Thương hiệu mọi người đều tin tưởng, công nghệ mã hóa hàng đầu, sản phẩm SSL DigiCert rất đa dạng, tương thích trình duyệt lên đến 99+%, bảo hành với giá trị cực cao.
+    - Cung cấp 7 gói đăng ký với thông số và mức giá khác nhau để phù hợp với nhiều đối tượng người dùng:
+      + Secure Site
+      + Secure Site with EV
+      + Secure Site Pro
+      + Secure Site Multi-Domain SSL
+      + Secure Site Pro EV
+      + Secure Site Wildcard
+      + Secure Site EV Multi-Domain SSL
     - **Tóm tắt SSL**: [SSL là gì](https://nhanhoa.com/ssl-bao-mat/gioi-thieu-ssl.html).
     
   #### 4. Dịch vụ Email 
-  
-   - Để có một hệ thống email chuyên nghiệp, tin cậy các tổ chức/ doanh nghiệp nên sử dụng dịch vụ email từ các nhà cung cấp có uy tín và kinh nghiệm.
-     - **Dịch vụ email UMAIL**
-        - **Nâng tầm thương hiệu**: **Khẳng định thương hiệu** Email của bạn sẽ chuyên nghiệp hơn với dạng tên miền riêng abc@tencongty.com (vd info@umail.vn) chứ không còn đơn điệu như trước đây. **Bảo mật an toàn** Email người dùng được mã hóa trong suốt quá trình truyền tải. Ngoài ra UMail thay đổi cổng kết nối POP3/ IMAP bằng SSL/ TLS giúp nâng cao tính năng bảo mật. **Di chuyển email dễ dàng** UMail với tùy chọn di chuyển qua máy chủ IMAP/ POP giúp bạn có thể chuyển đổi dễ dàng tất cả email cũ sang UMail để có những trải nghiệm đỉnh cao. **Hỗ trợ kỹ thuật 24/7** đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng.
-        - **Quản trị mạnh mẽ**: **Chứng thực email** chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.**Quản lý chuyên nghiệp** trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.**Không lo bỏ sót** cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào. **Hoạt động xuyên suốt** luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
-        - **Nhiều tính năng hữu ích**: **Bộ lọc thư rác** với bộ lọc thư rác/ spam thông minh, UMail giúp bạn không phải mất thời gian để đọc và xóa những email không mong muốn, tập trung hơn vào công việc chính. **Chuyển hướng tự động** dễ dàng tạo quy tắc để tự động chuyển hướng email người gửi vào đúng thư mục chỉ định, giúp hộp thư của bạn chuyên nghiệp và gọn gàng hơn. **Tìm kiếm tất cả** không phải khó khăn tìm từng email, tìm kiếm nhanh chóng theo tất cả những gì bạn muốn từ nội dung, chủ đề, tên, địa chỉ mail,…. **Ứng dụng chuyên nghiệp** giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
+- **Umail**
+  - Đặc điểm
+    + Email theo tên miền doanh nghiệp
+    + Đăng kí và thiết lập cực kì đơn giản
+    + An toàn và bảo mật
+    + Tương thích với mọi thiết bị
+    + Giao diện thân thiện
+  - Tính năng
+    Nâng tầm thương hiệu:
+    + Khẳng định thương hiệu
+        - Từ nay email của bạn sẽ chuyên nghiệp hơn với dạng tên miền riêng abc@tencongty.com (vd info@umail.vn) chứ không còn đơn điệu như trước đây.
+    + Bảo mật an toàn
+        - Email người dùng được mã hóa trong suốt quá trình truyền tải. Ngoài ra UMail thay đổi cổng kết nối POP3/ IMAP bằng SSL/ TLS giúp nâng cao tính năng bảo mật.
+    + Di chuyển email dễ dàng
+        - UMail với tùy chọn di chuyển qua máy chủ IMAP/ POP giúp bạn có thể chuyển đổi dễ dàng tất cả email cũ sang UMail để có những trải nghiệm đỉnh cao.
+    + Hỗ trợ kỹ thuật 24/7
+        - Đội ngũ kỹ thuật UMail giàu kinh nghiệm, chuyên nghiệp luôn sẵn sàng hỗ trợ 24/7, mang đến bạn sự tin tưởng, yên tâm khi sử dụng .
+
+    Quản trị mạnh mẽ:
+    + Chứng thực email
+        - Chứng thực SPF/ DKIM giúp tăng độ tin cây địa chỉ email gửi đi là đúng chủ thể, không bị giả mạo, hạn chế tối đa mail bị đánh dấu spam.
+    + Quản lý chuyên nghiệp
+        - Trang quản trị tiện lợi giúp quản trị viên dễ dàng thêm/ xóa/ quản lý nhóm, người dùng và linh hoạt tùy chỉnh dung lượng email trên từng tài khoản.
+    + Không lo bỏ sót
+        - Cấu hình Catch-all giúp nhận được tất cả email gửi đến bất kể người gửi nhập sai tên email, không còn phải lo bỏ sót bất kỳ thông tin quan trọng nào.
+    + Hoạt động xuyên suốt
+        - Luôn có các máy chủ định tuyến và dự phòng SMTP trong trường hợp email không gởi được nhằm đảm bảo hoạt động ổn định của khách hàng.
+
+    Nhiều tính năng hữu ích khác như:
+    + Bộ lọc thư rác
+        - Với bộ lọc thư rác/ spam thông minh, UMail giúp bạn không phải mất thời gian để đọc và xóa những email không mong muốn, tập trung hơn vào công việc chính.
+    + Chuyển hướng tự động
+        - Dễ dàng tạo quy tắc để tự động chuyển hướng email người gửi vào đúng thư mục chỉ định, giúp hộp thư của bạn chuyên nghiệp và gọn gàng hơn.
+    + Tìm kiếm tất cả
+        - Không phải khó khăn tìm từng email, tìm kiếm nhanh chóng theo tất cả những gì bạn muốn từ nội dung, chủ đề, tên, địa chỉ mail,….
+    + Ứng dụng chuyên nghiệp
+        - Giờ đây việc check mail đã dễ dàng hơn bao giờ hết, thực hiện mọi lúc mọi nơi với ứng dụng UMail trên 2 nền tảng iOS và Android.
+  - Nhân Hòa còn cung cấp 4 gói đăng ký Umail với các thông số và mức giá khác nhau đề phù hợp với nhiều đối tượng.
+    + Cá Nhân
+  	    - Dung lượng 2GB/user 
+    + Cơ bản
+        - Dung lượng 5GB/user
+    + Doanh nghiệp
+  	    - Dung lượng 10GB/user
+   	 + Chuyên Nghiệp
+  	    - Dung lượng 20 GB/user
+- **GG WorkSpace**
+  - Giới thiệu
+    + Google Workspace là bộ công cụ làm việc trực tuyến bao gồm Gmail, Meet, Chat, Lịch, Drive, Tài liệu, Trang tính, Trang trình bày,… được thay đổi tên thương hiệu từ G Suite.
+    + Sự ra đời của Google Workspace nhằm mang lại một diện mạo mới cho dòng sản phẩm chủ đạo hướng tới khách hàng doanh nghiệp. Về cơ bản sản phẩm vẫn kế thừa toàn bộ các tính năng của bộ công cụ G Suite, tên gọi được thay đổi và cải tiến một số yếu tố nhằm phù hợp hơn với nhu cầu khách hàng.
+    + Google Workspace đã và đang trở thành lựa chọn của hơn 6 triệu người dùng doanh nghiệp trên thế giới, đặc biệt phải kể đến là các tổ chức giáo dục, các start up hay các doanh nghiệp vừa và nhỏ. Những lợi thế về việc tiết giảm chi phí lưu trữ tài liệu, rút ngắn thời gian triển khai cũng như mức độ bảo mật dựa trên nền tảng Google Cloud Platform đáng tin cậy là những điểm nhấn thu hút sự chú ý của các nhà lãnh đạo và quản trị CNTT.
+  - Cung cấp 4 gói với 4 mức giá cùng thông số khác nhau đề phù hợp với nhiều loại khách hàng.
+    + Business Starter
+    + Business Standard
+    + Business Plus
+    + Enterprise
+- **Microsoft**
+  - Ưu điểm
+    + KHÔNG CẦN ĐẦU TƯ HẠ TẦNG
+        Email 365 được cung cấp như 1 dịch vụ thuê bao hàng tháng trên nền điện toán đám mây.
+        Khách hàng không cần trả trước cho việc đầu tư mua mới/nâng cấp phần cứng, tiết kiệm chi phí điện năng, chi phí vận hành.
+    + LUÔN CẬP NHẬT BẢN MỚI NHẤT
+        Email 365 luôn luôn được cập nhật phiên bản mới nhất, không cần đến những bản vá lỗi hay nâng cấp phần mềm Microsoft sẽ liên tục bổ sung các chức năng mới mà khách hàng không phải trả thêm bất kỳ khoản chi phí nào.
+    + TRUY CẬP MỌI LÚC MỌI NƠI
+        Cho phép người dùng dù ở bất cứ nơi đâu, bất cứ lúc nào, dù trực tuyến hay ngoại tuyến bạn đều có thể làm việc với phiên bản mới nhất của tài liệu và được thực hiện trên hầu hết mọi thiết bị: Máy tính, máy tính bảng, điện thoại di động.
+    + ĐƠN GIẢN HÓA
+        Giảm các công việc liên quan đến vận hành và quản trị Cở sở hạ tầng IT, dữ liệu của Doanh nghiệp được đảm bảo sao lưu liên tục và có khả năng phục hồi sau sự cố một cách nhanh chóng, khả năng mở rộng không giới hạn.
+
+  - Cung cấp 4 gói với 4 mức giá cùng thông số khác nhau đề phù hợp với nhiều loại khách hàng.
+    + Office 365 F3
+    + Microsoft 365 Business Office
+    + Microsoft 365 Apps for Business
+    + Microsoft 365 Business Standard
+   
+- **Email Server riêng**
+  - Giới thiệu
+    + Email Server của Nhân Hòa là giải pháp email chuyên nghiệp dành cho các tổ chức, doanh nghiệp có nhu cầu giao dịch email thường xuyên đòi hỏi cao về tính ổn định, tin cậy của hệ thống.
+    + Dịch vụ email theo tên miền riêng là sự kết hợp giữa nền tảng máy chủ Cloud, giải pháp phần mềm quản lý Mail Server và giải pháp SMTP ưu việt nhằm mang lại hiệu quả cao nhất cho người dùng. Với nền tảng máy chủ Cloud sử dụng công nghệ ảo hóa KVM đảm bảo hệ thống luôn hoạt động ổn định 24/24, thời gian uptime lên tới 99%. Dữ liệu của khách hàng luôn được đảm bảo an toàn ở mức độ cao, tốc độ xử lý được tối ưu hơn nhiều so với máy chủ thông thường. Người dùng được lựa chọn 1 trong các phần mềm quản lý mail server chuyên nghiệp là Kerio và Zimbra.
+    + Đây là những phần mềm quản lý mail server tốt nhất hiện nay với khả năng tùy biến cao khi cài đặt, giao diện người dùng thân thiện, người dùng có thể dễ dàng cài đặt dịch vụ theo các yêu cầu riêng của từng doanh nghiệp. Điểm khác biệt lớn nhất của dịch vụ email Nhân Hòa so với các dịch vụ email thông thường nằm ở giải pháp SMTP mới với công nghệ ưu việt mà chúng tôi đang sử dụng. Giải pháp SMTP này là yếu tố rất quan trọng để tăng mức độ uy tín của các email gửi đi đối với các hệ thống chống SPAM. 
+    + Hệ thống có SMTP dự phòng trong mọi trường hợp để đảm bảo việc gửi nhận email của khách hàng luôn được thông suốt...Đồng thời hệ thống mail server của khách hàng còn được hỗ trợ cài đặt đầy đủ các bản ghi DKIM, PTR, SPF (chứng thực người dùng) nhằm tăng độ uy tín của hệ thống. 
+    + Bên cạnh đó chúng tôi cũng trợ giúp khách hàng cài đặt dịch vụ theo đặc thù riêng của từng doanh nghiệp. Ngoài hướng dẫn sử dụng, chúng tôi có khuyến cáo chi tiết cho người dùng, giúp người dùng tránh hoặc hạn chế được các hành động có thể gây ảnh hưởng không tốt cho hệ thống trong quá trình sử dụng. Đây chính là những yếu tố quan trọng trong giải pháp Email Server của Nhân Hòa nhằm giảm tối đa chỉ số đánh giá SPAM của các hệ thống chống SPAM và đảm bảo tỷ lệ gửi email vào inbox của khách hàng lên tới 99% - điều mà các hệ thống email thông thường khó có thể đáp ứng được.
+    + Với những tính năng vượt trội, dịch vụ Email Server của Nhân Hòa là giải pháp email phù hợp cho các doanh nghiệp, giúp hoạt động giao dịch email của Quý khách trở nên hiệu quả và chuyên nghiệp hơn. Mọi vấn đề của Quý khách được hỗ trợ nhanh chóng 24/7 trong suốt quá trình sử dụng. 
+  - Cung cấp 4 gói với 4 mức giá cùng thông số khác nhau đề phù hợp với nhiều loại khách hàng.
+    + Mini 
+    + Starter 
+    + Advanced 
+    + Extremmer
+        
    - **Bảng giá Email Hosting**:[Bảng giá](https://nhanhoa.com/email/email-hosting.html).
    - **Bảng giá Email GG Workspace (GSuite)**:[Bảng giá](https://nhanhoa.com/google-workspace.html).
    - **Bảng giá Email Microsoft (Email 365)**:[Bảng giá](https://nhanhoa.com/email365.html).

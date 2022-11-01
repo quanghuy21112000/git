@@ -27,7 +27,7 @@
       - ***Văn hoá và trải nghiệm***: Chuyên nghiệp hoá nhân sự, xây dựng nền tảng văn hoá công ty vững chắc.
     - **Chiến lược**: Phát triển bền vững,  nền tảng văn hoá với con người làm cốt lõi, tiên phong về công nghệ và luôn đổi mới sáng tạo.  
 ### II. Các dịch vụ công ty Nhân Hòa cung cấp
-  #####  1. Tên miền
+  ####  1. Tên miền
   - Tên miền tương tự là địa chỉ công ty, ngoài ra tên miền còn là thương hiệu trực tuyến của bạn. Sở hữu một tên miền sẽ giúp khách hàng của bạn tìm đến công ty của bạn thay vì đối thủ.
     - **Dịch vụ đăng kí và chuyển đổi**
       - **Đăng kí tên miền**.
@@ -41,16 +41,21 @@
       - **Tên miền quốc tế mở rộng**: Tổ chức Quản lý tên miền quốc tế **ICANN** mới đưa ra các tên miền quốc tế mở rộng dành cho các nhà đăng ký (Registrar). Các tên miền này được chia ra theo các lĩnh vực nhằm giúp các cá nhân, doanh nghiệp có thêm nhiều lựa chọn tên miền phù hợp cho mình bên cạnh các tên miền quốc tế truyền thống như .com, net, org… Nhân Hòa là 1 trong 3 nhà đăng ký duy nhất của ICANN tại Việt Nam được cung cấp các tên miền này.[Danh sách các nhà đăng kí tên miền của **ICANN**](https://www.icann.org/en/accredited-registrars).
       - **Tên miền địa giới hành chính**: [Danh sách các tên miền địa giới](https://nhanhoa.com/trang/ten-mien-dia-gioi-hanh-chinh.html).
       - **Chuyển nhượng tên miền .VN**: [Quyết định và các bước thực hiện](https://nhanhoa.com/trang/ten-mien/chuyen-nhuong-ten-mien.html).
-  ##### 2. Dịch vụ Hosting (Shared Web Hosting)
+  #### 2. Dịch vụ Hosting (Shared Web Hosting)
   - Shared Web Hosting luôn là giải pháp phù hợp cho các cá nhân hoặc doanh nghiệp muốn có một website giới thiệu, giao dịch thương mại trên Internet một cách hiệu quả và tiết kiệm chi phí.
     - **Windows Hosting**: Windows hosting Hỗ trợ **nhiều ngôn ngữ lập trình** với các phiên bản khác nhau. **Miễn phí tạo, quản lý hộp thư điện tử (Email)** theo tên miền riêng. **Miễn phí tạo tên miền con (Subdomain)**. Sử dụng **nhiều tên miền** cho 1 website. Quản lý **nhiều website** trên cùng 1 tài khoản hosting. Quản lý đăng nhập, **giám sát thông số** băng thông và dung lượng. **Sao lưu dự phòng** và khôi phục dữ liệu.
     - **Linux Hosting**: Giống Wordpress Hosting, Hosting Linux hỗ trợ **nhiều ngôn ngữ lập trình** với các phiên bản khác nhau. **Miễn phí tạo, quản lý hộp thư điện tử (Email)** theo tên miền riêng. **Miễn phí tạo tên miền con (Subdomain)**. Sử dụng **nhiều tên miền** cho 1 website. Quản lý **nhiều website** trên cùng 1 tài khoản hosting linux nhằm giảm chi phí thuê hosting. Quản lý đăng nhập, **giám sát thông số** băng thông và dung lượng. **Sao lưu dự phòng** và khôi phục dữ liệu.
     - **Wordpress Hosting**: Hệ thống Wordpress Hosting của Nhân Hòa sử dụng 100% ổ cứng SSD Enterprise, kết hợp với LiteSpeed Webserver/ Memcached/ Redis giúp tối ưu hóa tốt nhất cho Wordpress. Dữ liệu của khách hàng được sao lưu liên tục hằng ngày trong 15 ngày gần nhất. Ngoài ra khách hàng có thể chủ động sao lưu dữ liệu bất kỳ lúc nào chỉ với 1 click chuột. Hệ thống vận hành trên nền tảng điện toán đám mây ưu việt, khắc phục triệt để các tồn tại của các giải pháp lưu trữ thông thường, đảm bảo thời gian online gần như tuyệt đối. Đội ngũ chuyên gia hàng đầu về dịch vụ luôn túc trực 24/7/365 hỗ trợ khách hàng trong suốt quá trình sử dụng.
-  ##### 3. SSL(Secure Sockets Layer-Bảo mật web)
+  #### 3. SSL(Secure Sockets Layer-Bảo mật web)
    - SSL là viết tắt của từ Secure Sockets Layer. Đây là một tiêu chuẩn an ninh công nghệ toàn cầu tạo ra một liên kết giữa máy chủ web và trình duyệt. Liên kết này đảm bảo tất cả dữ liệu trao đổi giữa máy chủ web và trình duyệt luôn được bảo mật và an toàn.
    - SSL đảm bảo rằng tất cả các dữ liệu được truyền giữa các máy chủ web và các trình duyệt được mang tính riêng tư, tách rời. SSL là một chuẩn công nghệ được sử dụng bởi hàng triệu trang web trong việc bảo vệ các giao dịch trực tuyến với khách hàng của họ.
-    - **Comodo SSL**: 
-
+    - **Comodo SSL**: Loại bỏ nguy cơ bị hacker khai thác với cơ chế mã hóa dữ liệu. Khẳng định thương hiệu và uy tín website của bạn trên internet. Được Google đánh giá và xếp hạng ưu tiên khi tìm kiếm SEO. Đáp ứng tiêu chuẩn bảo mật PCI/DSS với thanh toán trực tuyến. Tạo dựng niềm tin với khách hàng khi giao dịch trên website.   Quy trình xác thực và cài đặt chứng chỉ số SSL nhanh gọn.
+    - **Geo Trust SSL**: GeoTrust SSL có khả năng tương thích trình duyệt hoàn hảo trong tất cả các trình duyệt và thiết bị di động hiện đại. Bạn sẽ nhận được một logo con dấu trang web năng động với mỗi đơn hàng để thu hút khách hàng tiềm năng của bạn. Geo Trust SSL cung cấp tất cả các tính năng tiêu chuẩn như phát hành lại miễn phí không giới hạn và bảo đảm hoàn lại tiền trong 30 ngày.
+    - **Digicert SSL**: Thương hiệu mọi người đều tin tưởng, công nghệ mã hóa hàng đầu, sản phẩm SSL DigiCert rất đa dạng, tương thích trình duyệt lên đến 99+%, bảo hành với giá trị cực cao.
+    - **Tóm tắt SSL**: [SSL là gì](https://nhanhoa.com/ssl-bao-mat/gioi-thieu-ssl.html).
+  #### 4. Dịch vụ Email 
+   - Để có một hệ thống email chuyên nghiệp, tin cậy các tổ chức/ doanh nghiệp nên sử dụng dịch vụ email từ các nhà cung cấp có uy tín và kinh nghiệm.
+     - **Dịch vụ email UMAIL**:  
 
     
     

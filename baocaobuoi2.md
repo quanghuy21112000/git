@@ -174,7 +174,7 @@
    13.   ```chroot```: thay đổi quyền của thư mục (tương tự chmod)
    14.   ```chown```: thay đổi quyền sở hữu của tệp tin
     
-#### Các lệnh liên quan đến cài đặt 
+#### III. Các lệnh liên quan đến cài đặt 
 
    1. ```gunzip```: chuyển file .tar.gz về file .tar
 
@@ -184,7 +184,7 @@
 
    4. ```yum install```: cài đặt những ứng dụng có trong kho dựa trên RPM
 
-#### Lệnh khi làm việc ở cửa sổ Terminal
+#### IV. Lệnh khi làm việc ở cửa sổ Terminal
 
    1. ```clear```: xoá trắng cửa sổ dòng lệnh.
    2. ```date```: xem ngày, giờ hệ thống.

@@ -73,7 +73,7 @@
    
    
 ### Tìm hiểu về LINUX
-##### I. Những lệnh liên quan đến hệ thống
+#### I. Những lệnh liên quan đến hệ thống
         
    1. **exit**: thoát khỏi cửa sổ dòng lệnh.
    2. **reboot**: khởi động lại hệ thống.
@@ -86,6 +86,15 @@
    7. **ps**: kiểm tra hệ thống tiến trình đang chạy.
         
    ![](./icon/18.png)
+   
+   8. **kill**: Sẽ giết (hoặc dừng) một tiến trình.
+   
+   ![](./icon/19.png)
+   
+   9.**pstree**: hiển thị dưới dạng cây
+   
+   ![](./icon/20.png)
+   ![](./icon/20-2.png)
     
         
         

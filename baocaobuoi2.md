@@ -4,5 +4,5 @@
 
 #### Các bước thực hiện cài đặt:
   1. Khởi chạy VMWare workstation, sau đó chọn **Create a New Virtual Machine**.
-  
+    <img src="image/1.PNG">
   

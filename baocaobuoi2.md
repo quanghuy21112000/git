@@ -147,11 +147,26 @@
        ![](./icon/32.png)
       
    6.  ```cp```: copy 1 hay nhiều tập tin đến thư mục mới
+  
+       ![](./icon/33.png)
+       
    7.  ```mv```: đổi tên hay di chuyển tập tin, thư mục
+   
+       ![](./icon/34.png)
+   
    8.  ```rm```: xóa tập tin hoặc thư mục
+  
+       ![](./icon/35.png)
+       
    9.  ```touch```: tạo 1 tệp tin 
+   
+       ![](./icon/36.png)
+   
    10. ```cat```: xem nội dung tệp tin
-   11. ``vi```: chỉnh sửa nội dung file text với trình soạn thảo văn bản vi
+   
+       ![](./icon/37.png)
+   
+   11. ```vi```: chỉnh sửa nội dung file text với trình soạn thảo văn bản vi
    12.  ```chmod```: thay đổi quyền của tệp tin
    13.   ```chroot```: thay đổi quyền của thư mục (tương tự chmod)
    14.   ```chown```: thay đổi quyền sở hữu của tệp tin

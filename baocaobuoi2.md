@@ -76,15 +76,18 @@
 
   #### I. Những lệnh liên quan đến hệ thống
         
-        1. ```exit```: thoát khỏi cửa sổ dòng lệnh.
-        2. ```reboot```: khởi động lại hệ thống.
-        3. ```halt```: tắt máy
+        1. **exit**: thoát khỏi cửa sổ dòng lệnh.
+        2. **reboot**: khởi động lại hệ thống.
+        3. **halt**: tắt máy
           - Phải ở quyền root.
           - Không nên dùng, bị treo máy ảo.
-        4. ```startx```: khởi động chế độ xwindows từ cửa sổ terminal.
-        5. ```mount```: gắn hệ thống tập tin từ 1 thiết bị lưu trữ vào cây thư mục chính.
-        6. ```umount```: unmount tập tin khỏi cây thư mục chính.
-        7. ```ps```: kiểm tra hệ thống tiến trình đang chạy.
+        4. **startx**: khởi động chế độ xwindows từ cửa sổ terminal.
+        5. **mount**: gắn hệ thống tập tin từ 1 thiết bị lưu trữ vào cây thư mục chính.
+        6. **umount**: unmount tập tin khỏi cây thư mục chính.
+        7. **ps**: kiểm tra hệ thống tiến trình đang chạy.
+        
+        ![](./icon/18.png)
+    
         
         
 

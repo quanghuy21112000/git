@@ -128,23 +128,23 @@
  
    1. ```ls```: liệt kê các tệp và thư mục trong thư mục hiện hành
      
-      ![](./icon/30.png)
+       ![](./icon/30.png)
       
    2. ```pwd```: xuất đường dẫn của thư mục đang làm việc
      
-      ![](./icon/28.png)
+       ![](./icon/28.png)
       
    3.  ```cd```: thay đổi thư mục làm việc đến 1 thư mục mới
      
-      ![](./icon/29.png)
+       ![](./icon/29.png)
       
    4.  ```mkdir```: tạo thư mục mới
       
-      ![](./icon/31.png)
+       ![](./icon/31.png)
       
    5.  ```rmdir```: xóa thư mục rỗng
   
-      ![](./icon/32.png)
+       ![](./icon/32.png)
       
    6.  ```cp```: copy 1 hay nhiều tập tin đến thư mục mới
    7.  ```mv```: đổi tên hay di chuyển tập tin, thư mục

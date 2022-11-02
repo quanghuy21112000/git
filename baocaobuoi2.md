@@ -100,29 +100,87 @@
    ![](./icon/21-1.png)
    ![](./icon/21-2.png)
    
-   11. **cat /etc/*release**: 
+   11. **cat /etc/*release**: xem thông tin hệ điều hành
    
    ![](./icon/22.png)
    
-   12. **uname -r**: 
+   12. **uname -r**:  Xem phiên bản Kernel
 
    ![](./icon/23.png)
    
-   13. **head /proc/meminfo**:
+   13. **head /proc/meminfo**: Xem thông tin bộ nhớ
 
    ![](./icon/24.png)
    
-   14. **df -h**:
+   14. **df -h**: Xem file hệ thống
    
    ![](./icon/25.png)
    
-   15. **cat /proc/cpuinfo | grep model**: 
+   15. **cat /proc/cpuinfo | grep model**: Đêm sổ lượng CPU
    
    ![](./icon/26.png)
   
-   16. **ifconfig**:
+   16. **ifconfig**: Xem địa chỉ IP của máy
    
    ![](./icon/27.png)
+   
+#### II. Các lệnh liên quan đến tệp và thư mục
+ 
+   1. ```ls```: liệt kê các tệp và thư mục trong thư mục hiện hành
+     
+       ![](./icon/30.png)
+      
+   2. ```pwd```: xuất đường dẫn của thư mục đang làm việc
+     
+       ![](./icon/28.png)
+      
+   3.  ```cd```: thay đổi thư mục làm việc đến 1 thư mục mới
+     
+       ![](./icon/29.png)
+      
+   4.  ```mkdir```: tạo thư mục mới
+      
+       ![](./icon/31.png)
+      
+   5.  ```rmdir```: xóa thư mục rỗng
+  
+       ![](./icon/32.png)
+      
+   6.  ```cp```: copy 1 hay nhiều tập tin đến thư mục mới
+  
+       ![](./icon/33.png)
+       
+   7.  ```mv```: đổi tên hay di chuyển tập tin, thư mục
+   
+       ![](./icon/34.png)
+   
+   8.  ```rm```: xóa tập tin hoặc thư mục
+  
+       ![](./icon/35.png)
+       
+   9.  ```touch```: tạo 1 tệp tin 
+   
+       ![](./icon/36.png)
+   
+   10. ```cat```: xem nội dung tệp tin
+   
+       ![](./icon/37.png)
+   
+   11. ```vi```: chỉnh sửa nội dung file text với trình soạn thảo văn bản vi
+   12.  ```chmod```: thay đổi quyền của tệp tin
+   13.   ```chroot```: thay đổi quyền của thư mục (tương tự chmod)
+   14.   ```chown```: thay đổi quyền sở hữu của tệp tin
+    
+#### Các lệnh liên quan đến cài đặt 
+
+   1. ```gunzip```: chuyển file .tar.gz về file .tar
+
+   2. ```tar -xvf```: giải nén file .tar
+
+   3. ```apt install```: cài đặt những ứng dụng có trong kho dựa trên Debian
+
+   4. ```yum install```: cài đặt những ứng dụng có trong kho dựa trên RPM
+
    
     
         

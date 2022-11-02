@@ -168,8 +168,9 @@
    
    11. ```vi```: chỉnh sửa nội dung file text với trình soạn thảo văn bản vi
   
-      
-      
+       ![](./icon/38-1.png)
+       ![](./icon/38-2.png)
+        
    12.  ```chmod```: thay đổi quyền của tệp tin
    13.   ```chroot```: thay đổi quyền của thư mục (tương tự chmod)
    14.   ```chown```: thay đổi quyền sở hữu của tệp tin

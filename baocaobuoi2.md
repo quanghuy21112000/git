@@ -167,6 +167,9 @@
        ![](./icon/37.png)
    
    11. ```vi```: chỉnh sửa nội dung file text với trình soạn thảo văn bản vi
+  
+      
+      
    12.  ```chmod```: thay đổi quyền của tệp tin
    13.   ```chroot```: thay đổi quyền của thư mục (tương tự chmod)
    14.   ```chown```: thay đổi quyền sở hữu của tệp tin
@@ -180,6 +183,12 @@
    3. ```apt install```: cài đặt những ứng dụng có trong kho dựa trên Debian
 
    4. ```yum install```: cài đặt những ứng dụng có trong kho dựa trên RPM
+
+#### Lệnh khi làm việc ở cửa sổ Terminal
+
+   1. ```clear```: xoá trắng cửa sổ dòng lệnh.
+   2. ```date```: xem ngày, giờ hệ thống.
+   3. ```cal```: xem lịch hệ thống.
 
    
     

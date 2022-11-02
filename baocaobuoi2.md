@@ -91,10 +91,15 @@
    
    ![](./icon/19.png)
    
-   9.**pstree**: hiển thị dưới dạng cây
+   9. **top**: Hiển thị danh sách các tiến trình đang chạy và lượng CPU
    
    ![](./icon/20.png)
-   ![](./icon/20-2.png)
+   
+   10. **pstree**: Hiển thị dưới dạng cây
+    
+   ![](./icon/21-1.png)
+   ![](./icon/21-2.png)
+   
     
         
         

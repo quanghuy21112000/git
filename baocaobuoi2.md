@@ -70,6 +70,11 @@
 17. Giao diện trang chủ của Centos.
 
    ![](./icon/17.png)
+   
+   
+### Tìm hiểu về LINUX
+
+
                           
                
                   

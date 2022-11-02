@@ -100,6 +100,30 @@
    ![](./icon/21-1.png)
    ![](./icon/21-2.png)
    
+   11. **cat /etc/*release**: 
+   
+   ![](./icon/22.png)
+   
+   12. **uname -r**: 
+
+   ![](./icon/23.png)
+   
+   13. **head /proc/meminfo**:
+
+   ![](./icon/24.png)
+   
+   14. **df -h**:
+   
+   ![](./icon/25.png)
+   
+   15. **cat /proc/cpuinfo | grep model**: 
+   
+   ![](./icon/26.png)
+  
+   16. **ifconfig**:
+   
+   ![](./icon/27.png)
+   
     
         
         

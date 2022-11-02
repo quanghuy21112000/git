@@ -3,13 +3,19 @@
 ### Cài đặt máy ảo Centos 7
 
 #### Các bước thực hiện cài đặt:
-  1. Khởi chạy VMWare workstation, sau đó chọn **Create a New Virtual Machine**.
+  1. Khởi chạy VMWare workstation, sau đó chọn **Create a New Virtual Machine**. Sau đó bấm **Next**.
   
    ![](./icon/1.png)
-  
+ 
+ 2. Xuất hiện cửa sổ rồi bấm **Next**.
+ 
    ![](./icon/2.png)
+ 
+ 3. Cửa sổ xuất hiện chọn **Installer disc image files(iso)**, sau đó chỉ dẫn đến ổ đĩa cài Centos bằng cách chọn **Browse..**. Sau đó bấm **Next**.
     
    ![](./icon/3.png)
+  
+ 4. 
       
    ![](./icon/4.png)
   

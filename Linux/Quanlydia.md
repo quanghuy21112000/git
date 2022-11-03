@@ -121,22 +121,22 @@ VI. **Giới thiệu về RAID**
 VII. **logical volume management** 
 
   1. **Giới thiệu về lvm**
-    - **Vấn đề**: Có một số vấn đề khi làm việc với đĩa cứng và phân vùng tiêu chuẩn. Xem xétMột hệ thống với một thiết bị đĩa cứng nhỏ và lớn, được phân vùng như thế này. Đĩa đầu tiên được phân vùng làm hai, đĩa thứ hai có hai phân vùng và một số trốngkhông gian.
-    - **Giải pháp**: Sử dụng lvm sẽ tạo ra một lớp ảo giữa các hệ thống tệp được gắn kết và phần cứng thiết bị. Lớp ảo này sẽ cho phép quản trị viên phóng to hệ thống tệp được gắn kết trong dùng. Khi lvm được sử dụng đúng cách, thì không cần phải ngắt kết nối hệ thống tệp để phóng to nó.
+     - **Vấn đề**: Có một số vấn đề khi làm việc với đĩa cứng và phân vùng tiêu chuẩn. Xem xétMột hệ thống với một thiết bị đĩa cứng nhỏ và lớn, được phân vùng như thế này. Đĩa đầu tiên được phân vùng làm hai, đĩa thứ hai có hai phân vùng và một số trốngkhông gian.
+     - **Giải pháp**: Sử dụng lvm sẽ tạo ra một lớp ảo giữa các hệ thống tệp được gắn kết và phần cứng thiết bị. Lớp ảo này sẽ cho phép quản trị viên phóng to hệ thống tệp được gắn kết trong dùng. Khi lvm được sử dụng đúng cách, thì không cần phải ngắt kết nối hệ thống tệp để phóng to nó.
    
   2. **lvm terminology**
-    - **Physical volumn (pv)**: Ổ đĩa vật lý là bất kỳ thiết bị khối nào (đĩa, phân vùng, thiết bị RAID hoặc thậm chí là iSCSI thiết bị). Tất cả các thiết bị này có thể trở thành thành viên của một nhóm âm lượng. Các lệnh được sử dụng để quản lý âm lượng vật lý bắt đầu bằng pv.
-    - **volume group (vg)**: Nhóm âm lượng là một lớp trừu tượng giữa các thiết bị khối và khối lượng logic. Các lệnh được sử dụng để quản lý một nhóm âm lượng bắt đầu bằng vg.
-    - **logical volume (lv)**: Một khối lượng lô-gic được tạo trong một nhóm ổ đĩa. Khối lượng lô-gic có chứa hệ thống tệp có thể được gắn kết. Việc sử dụng các khối lượng logic tương tự như việc sử dụng các phân vùng và là thực hiện với các lệnh tiêu chuẩn tương tự (MKFS, Mount, FSCK, DF,...). Các lệnh được sử dụng để quản lý một khối lượng logic bắt đầu bằng lv.
+     - **Physical volumn (pv)**: Ổ đĩa vật lý là bất kỳ thiết bị khối nào (đĩa, phân vùng, thiết bị RAID hoặc thậm chí là iSCSI thiết bị). Tất cả các thiết bị này có thể trở thành thành viên của một nhóm âm lượng. Các lệnh được sử dụng để quản lý âm lượng vật lý bắt đầu bằng pv.
+     - **volume group (vg)**: Nhóm âm lượng là một lớp trừu tượng giữa các thiết bị khối và khối lượng logic. Các lệnh được sử dụng để quản lý một nhóm âm lượng bắt đầu bằng vg.
+     - **logical volume (lv)**: Một khối lượng lô-gic được tạo trong một nhóm ổ đĩa. Khối lượng lô-gic có chứa hệ thống tệp có thể được gắn kết. Việc sử dụng các khối lượng logic tương tự như việc sử dụng các phân vùng và là thực hiện với các lệnh tiêu chuẩn tương tự (MKFS, Mount, FSCK, DF,...). Các lệnh được sử dụng để quản lý một khối lượng logic bắt đầu bằng lv.
   3. **verifying existing physical volumes**
-    - **lvmdiskscan**: Để có được danh sách các thiết bị chặn có thể được sử dụng với LVM, hãy sử dụng lvmdiskscan. 
-    - **pvs**: Cách dễ nhất để xác minh xem các thiết bị có được biết đến với lvm hay không là bằng lệnh pvs. 
-    - **pvscan**: Lệnh pvscan sẽ quét tất cả các đĩa cho các Khối lượng vật lý hiện có. Thông tin là tương tự như PVS, cộng với việc bạn nhận được một dòng với tổng kích thước.
-    - **pvdisplay**: Sử dụng pvdisplay để biết thêm thông tin về khối lượng vật lý. Bạn cũng có thể sử dụng pvdisplay mà không có một đối số để hiển thị thông tin về tất cả các khối lượng vật lý (lvm).
+     - **lvmdiskscan**: Để có được danh sách các thiết bị chặn có thể được sử dụng với LVM, hãy sử dụng lvmdiskscan. 
+     - **pvs**: Cách dễ nhất để xác minh xem các thiết bị có được biết đến với lvm hay không là bằng lệnh pvs. 
+     - **pvscan**: Lệnh pvscan sẽ quét tất cả các đĩa cho các Khối lượng vật lý hiện có. Thông tin là tương tự như PVS, cộng với việc bạn nhận được một dòng với tổng kích thước.
+     - **pvdisplay**: Sử dụng pvdisplay để biết thêm thông tin về khối lượng vật lý. Bạn cũng có thể sử dụng pvdisplay mà không có một đối số để hiển thị thông tin về tất cả các khối lượng vật lý (lvm).
   4. **verifying existing volume groups**
-    - **vgs**: Tương tự như pvs là việc sử dụng vgs để hiển thị tổng quan nhanh về tất cả các nhóm âm lượng. Kia chỉ là một nhóm âm lượng trong ảnh chụp màn hình bên dưới, nó được đặt tên là VolGroup00 và gần như dung lượng 16GB.
-    - **vgsvan**: Lệnh vgscan sẽ quét tất cả các ổ đĩa cho các Nhóm ổ đĩa hiện có.
-    - **vgdisplay**: Lệnh vgdisplay sẽ cung cấp cho bạn thông tin chi tiết hơn về một nhóm âm lượng (hoặc giới thiệu về tất cả các nhóm ổ đĩa nếu bạn bỏ qua đối số).
+     - **vgs**: Tương tự như pvs là việc sử dụng vgs để hiển thị tổng quan nhanh về tất cả các nhóm âm lượng. Kia chỉ là một nhóm âm lượng trong ảnh chụp màn hình bên dưới, nó được đặt tên là VolGroup00 và gần như dung lượng 16GB.
+     - **vgsvan**: Lệnh vgscan sẽ quét tất cả các ổ đĩa cho các Nhóm ổ đĩa hiện có.
+     - **vgdisplay**: Lệnh vgdisplay sẽ cung cấp cho bạn thông tin chi tiết hơn về một nhóm âm lượng (hoặc giới thiệu về tất cả các nhóm ổ đĩa nếu bạn bỏ qua đối số).
   5. ****
     
     

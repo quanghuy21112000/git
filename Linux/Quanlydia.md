@@ -50,6 +50,9 @@ viên) kết hợp với một hoặc nhiều danh sách kiểm soát truy cập
 ghi nhật ký chỉ có trong ext3. 
    - **ext4**: ext4 hỗ trợ các tệp lớn hơn (lên đến 16 terabyte) và các hệ thống tệp lớn hơn ext3 (và nhiều tính năng khác).
    - **xfs**:một hệ thống tệp hiệu suất cao có khả năng mở rộng cao.
+   - **vfat**:Hệ thống tệp vfat tồn tại ở một số dạng: fat12 đối với đĩa mềm, fat16 trên ms-dos và fat32 đối với đĩa lớn hơn. Việc triển khai vfat Linux hỗ trợ tất cả những điều này, nhưng vfat thiếu rất nhiều tính năng như bảo mật và liên kết. Đĩa mỡ có thể được đọc bởi mọi hệ điều hành và được sử dụng rất nhiều cho máy ảnh kỹ thuật số, thẻ USB và để trao đổi dữ liệu giữa các hệ điều hành khác nhau trên máy tính của người dùng gia đình.
+   - **iso9660**:iso 9660 là định dạng tiêu chuẩn cho cdrom. Rất có thể bạn sẽ gặp hệ thống tệp này cũng trên đĩa cứng của bạn dưới dạng hình ảnh của cdrom (thường có phần mở rộng .iso). Tiêu chuẩn iso 9660 giới hạn tên tệp ở định dạng 8.3. Thế giới Unix không thích điều này, và do đó đã thêm phần mở rộng chế độ tập tin , cho phép đặt tên tệp lên đến 255 ký tự và chế độ tệp kiểu Unix, quyền sở hữu và liên kết tượng trưng. Một phần mở rộng khác của iso 9660 là joliet, thêm 64 ký tự unicode vào tên tệp. Tiêu chuẩn el torito mở rộng iso 9660 để có thể khởi động từ CD-ROM.
+   
    - Tệp / proc / filesystems hiển thị danh sách các hệ thống tệp được hỗ trợ. Khi bạn mount một hệ thống tệp mà không xác định rõ ràng một hệ thống tệp, thì mount trước tiên sẽ cố gắng thăm dò / etc / filesystems và sau đó thăm dò / proc / filesystems cho tất cả các hệ thống tệp không có nhãn nodev. Nếu / etc / filesystems kết thúc bằng một dòng chỉ chứa dấu hoa thị (*) thì cả hai tệp đều được kiểm tra.
    
        ![](./image/10.png)
@@ -64,8 +67,57 @@ ghi nhật ký chỉ có trong ext3.
 
        ![](./image/12.png)
   
- IV. 
+ IV. **Mounting**
  
+  1. **Gắn hệ thống tệp** 
+   - **/ etc / filesystems**: Khi mount một hệ thống tệp mà không chỉ định rõ ràng hệ thống tệp, sau đó mount sẽ thăm dò / etc/filesystems trước tiên. Mount sẽ bỏ qua các dòng với chỉ thị nodev.
+   
+       ![](./image/13.png)
+       
+   - **/proc/filesystems**: Khi /etc/ filesystems không tồn tại hoặc kết thúc bằng một dấu * duy nhất trên dòng cuối cùng, thì mount sẽ đọc /proc/filesystems.
+   
+       ![](./image/14.png)
+       
+  2. **Hiển thị hệ thống tệp được gắn kết**
+   - **df**: Một cách thân thiện hơn với người dùng để xem các hệ thống tệp được gắn kết là df. Lệnh df (diskfree) có thêm lợi ích là hiển thị cho bạn dung lượng trống trên mỗi đĩa được gắn. Thích rất nhiều. Các lệnh Linux, df hỗ trợ chuyển đổi -h để con người dễ đọc hơn đầu ra.
+      
+      ![](./image/15.png)
+   
+   - **df -h**: Kích thước, dung lượng trống, gigabyte đã sử dụng và tỷ lệ phần trăm và điểm gắn kết của một phân vùng.
+   
+      ![](./image/16.png)
+    
+  3. **Gắn kết vĩnh viễn**
+   - **/etc/fstab**: Bảng hệ thống tệp nằm trong / etc / fstab chứa danh sách các hệ thống tệp, với tùy chọn tự động gắn kết từng người trong số chúng vào thời điểm khởi động.
+   
+      ![](./image/17.png)
+   
+V. **Khắc phục sự cố**
+ 
+  1.  **iostat**
+   - iostat báo cáo IO tại mỗi khoảng thời gian nhất định. Nó cũng bao gồm một mức sử dụng cpu nhỏ bản tóm tắt.
+   
+      ![](./image/18.png)
+      
+  2. **vmstat**
+   - Trong khi vmstat chủ yếu là một công cụ giám sát bộ nhớ, điều đáng nói ở đây là báo cáo về dữ liệu I / O tóm tắt cho các thiết bị khối và không gian hoán đổi.
+   
+      ![](./image/19.png)
+      ![](./image/20.png)
+      
+VI. ****      
+  
+      
+    
+    
+   
+
+   
+   
+
+   
+
+     
      
         
   

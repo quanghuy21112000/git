@@ -128,17 +128,30 @@ VII. **logical volume management**
      - **Physical volumn (pv)**: Ổ đĩa vật lý là bất kỳ thiết bị khối nào (đĩa, phân vùng, thiết bị RAID hoặc thậm chí là iSCSI thiết bị). Tất cả các thiết bị này có thể trở thành thành viên của một nhóm âm lượng. Các lệnh được sử dụng để quản lý âm lượng vật lý bắt đầu bằng pv.
      - **volume group (vg)**: Nhóm âm lượng là một lớp trừu tượng giữa các thiết bị khối và khối lượng logic. Các lệnh được sử dụng để quản lý một nhóm âm lượng bắt đầu bằng vg.
      - **logical volume (lv)**: Một khối lượng lô-gic được tạo trong một nhóm ổ đĩa. Khối lượng lô-gic có chứa hệ thống tệp có thể được gắn kết. Việc sử dụng các khối lượng logic tương tự như việc sử dụng các phân vùng và là thực hiện với các lệnh tiêu chuẩn tương tự (MKFS, Mount, FSCK, DF,...). Các lệnh được sử dụng để quản lý một khối lượng logic bắt đầu bằng lv.
+     
   3. **verifying existing physical volumes**
      - **lvmdiskscan**: Để có được danh sách các thiết bị chặn có thể được sử dụng với LVM, hãy sử dụng lvmdiskscan. 
      - **pvs**: Cách dễ nhất để xác minh xem các thiết bị có được biết đến với lvm hay không là bằng lệnh pvs. 
      - **pvscan**: Lệnh pvscan sẽ quét tất cả các đĩa cho các Khối lượng vật lý hiện có. Thông tin là tương tự như PVS, cộng với việc bạn nhận được một dòng với tổng kích thước.
      - **pvdisplay**: Sử dụng pvdisplay để biết thêm thông tin về khối lượng vật lý. Bạn cũng có thể sử dụng pvdisplay mà không có một đối số để hiển thị thông tin về tất cả các khối lượng vật lý (lvm).
+     
   4. **verifying existing volume groups**
      - **vgs**: Tương tự như pvs là việc sử dụng vgs để hiển thị tổng quan nhanh về tất cả các nhóm âm lượng. Kia chỉ là một nhóm âm lượng trong ảnh chụp màn hình bên dưới, nó được đặt tên là VolGroup00 và gần như dung lượng 16GB.
      - **vgsvan**: Lệnh vgscan sẽ quét tất cả các ổ đĩa cho các Nhóm ổ đĩa hiện có.
      - **vgdisplay**: Lệnh vgdisplay sẽ cung cấp cho bạn thông tin chi tiết hơn về một nhóm âm lượng (hoặc giới thiệu về tất cả các nhóm ổ đĩa nếu bạn bỏ qua đối số).
-  5. ****
-    
+     
+  5. **verifying existing logical volumes**
+     - **lvs**: Sử dụng lv để xem nhanh tất cả các tập hợp lý hiện có.
+     - **lvscan**: Lệnh lvscan sẽ quét tất cả các đĩa để tìm các tập lôgic hiện có.
+     - **lvdisplay**: Thông tin chi tiết hơn về khối lượng logic có sẵn thông qua lvdisplay (1) yêu cầu.
+
+  6. **manage physical volumes**
+     - **pvcreate**: Sử dụng lệnh pvcreate để thêm thiết bị vào lvm.
+     - **pvremove**: Sử dụng lệnh pvremove để xóa khối lượng vật lý khỏi lvm. Các thiết bị có thể không được sử dụng.
+     - **pvresize**: Khi bạn sử dụng fdisk để thay đổi kích thước phân vùng trên đĩa, thì bạn phải sử dụng pvresize để làm cho lvm nhận ra kích thước mới của ổ đĩa vật lý đại diện cho phân vùng này.
+     - **pvchange**: Với pvchange, bạn có thể ngăn việc phân bổ Khối lượng vật lý trong Nhóm khối lượng mới hoặc Khối lượng lôgic. Điều này có thể hữu ích nếu bạn định xóa một Khối lượng vật lý.
+     - **pvmove**: Với pvmove, bạn có thể di chuyển các Khối lượng logic từ trong một Nhóm khối lượng sang một Khối lượng Vật lý khác. Việc này phải được thực hiện trước khi xóa một Khối lượng vật lý.
+     - 
     
 
 

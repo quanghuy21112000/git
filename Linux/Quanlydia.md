@@ -103,9 +103,50 @@ V. **Khắc phục sự cố**
    - Trong khi vmstat chủ yếu là một công cụ giám sát bộ nhớ, điều đáng nói ở đây là báo cáo về dữ liệu I / O tóm tắt cho các thiết bị khối và không gian hoán đổi.
    
        ![](./image/19.png)
+       
        ![](./image/20.png)
       
-VI. ****      
+VI. **Giới thiệu về RAID**  
+
+   - **Raid 0**: RAID 0 sử dụng hai hoặc nhiều đĩa và thường được gọi là striping (hoặc stripe set, hoặc striped volume).Dữ liệu được chia thành từng phần, các khối đó được trải đều trên mọi đĩa trong mảng. Ưu điểm chính của raid 0 là bạn có thể tạo các ổ đĩa lớn hơn. RAID 0 là cuộc đột kích duy nhất mà không dư thừa.
+   - **jbod**: jbod sử dụng hai hoặc nhiều đĩa, và thường được gọi là nối (kéo dài, kéo dài bộ, hoặc âm lượng kéo dài). Dữ liệu được ghi vào đĩa đầu tiên, cho đến khi nó đầy. Sau đó, dữ liệu được ghi vào đĩa thứ hai... Ưu điểm chính của jbod (Just a Bunch of Disks) là bạn có thể tạo ổ đĩa lớn hơn. JBOD không cung cấp dự phòng.
+   - **raid 1**: RAID 1 sử dụng chính xác hai đĩa và thường được gọi là phản chiếu (hoặc bộ gương, hoặc phản chiếu âm lượng). Tất cả dữ liệu được ghi vào mảng được ghi trên mỗi đĩa. Ưu điểm chính của đột kích 1 là dự phòng. Nhược điểm chính là bạn mất ít nhất một nửa số đĩa khả dụng của mình không gian (nói cách khác, bạn ít nhất gấp đôi chi phí).
+   - **raid 2, 3 and 4**: RAID 2 sử dụng tính năng tước cấp bit, cấp độ RAID 3 byte và RAID 4 giống như RAID 5, nhưng với RAID đĩa chẵn lẻ chuyên dụng. Điều này thực sự chậm hơn raid 5, bởi vì mọi bài viết sẽ có để ghi chẵn lẻ vào đĩa (nút cổ chai) này. Không chắc là bạn sẽ thấy những cuộc đột kích này các cấp trong sản xuất.
+   - **raid 5**: RAID 5 sử dụng ba đĩa trở lên, mỗi đĩa được chia thành các khối. Mỗi khi các đoạn được viết đến mảng, một trong các đĩa sẽ nhận được một đoạn chẵn lẻ. Không giống như raid 4, đoạn chẵn lẻ sẽ xen kẽ giữa tất cả các đĩa. Ưu điểm chính của việc này là đột kích 5 sẽ cho phép đầy đủ. Phục hồi dữ liệu trong trường hợp một lỗi đĩa cứng.
+   - **raid 6**: RAID 6 rất giống với RAID 5, nhưng sử dụng hai phần chẵn lẻ. RAID 6 bảo vệ chống lại hai khó khăn lỗi đĩa. Oracle Solaris zfs gọi đây là raidz2 (và cũng có raidz3 với ba chẵn lẻ).
+   - **raid 0+1**: RAID 0+1 là một tấm gương(1) sọc(0). Điều này có nghĩa là trước tiên bạn tạo hai bộ sọc đột kích 0 và sau đó, bạn thiết lập chúng như một bộ gương. Ví dụ: khi bạn có sáu đĩa 100GB, thì các bộ sọc là mỗi 300GB. Kết hợp trong một chiếc gương, điều này làm cho tổng cộng 300GB. Đột kích 0+1 sẽ sống sót sau một lỗi đĩa. Nó sẽ chỉ tồn tại sau lỗi đĩa thứ hai nếu đĩa này nằm trong cùng một dải được đặt như đĩa bị lỗi trước đó.
+   - **raid 1+0**: RAID 1+0 là một dải (0) gương (1). Ví dụ: khi bạn có sáu đĩa 100GB, thì trước tiên, bạn tạo ba bản sao 100GB mỗi bản. Sau đó, bạn tách chúng lại với nhau thành một ổ đĩa 300GB. Trong ví dụ này, miễn là không phải tất cả các đĩa trong cùng một gương đều bị lỗi, nó có thể tồn tại đến ba lỗi đĩa cứng.
+   - **raid 50**: RAID 5+0 là một dải (0) của mảng RAID 5. Giả sử bạn có chín đĩa 100GB, thì bạn có thể tạo ba mảng raid 5 mỗi mảng 200GB. Sau đó, bạn có thể kết hợp chúng thành một lớn bộ sọc.
+ 
+VII. **logical volume management** 
+
+  1. **Giới thiệu về lvm**
+    - **Vấn đề**: Có một số vấn đề khi làm việc với đĩa cứng và phân vùng tiêu chuẩn. Xem xétMột hệ thống với một thiết bị đĩa cứng nhỏ và lớn, được phân vùng như thế này. Đĩa đầu tiên được phân vùng làm hai, đĩa thứ hai có hai phân vùng và một số trốngkhông gian.
+    - **Giải pháp**: Sử dụng lvm sẽ tạo ra một lớp ảo giữa các hệ thống tệp được gắn kết và phần cứng thiết bị. Lớp ảo này sẽ cho phép quản trị viên phóng to hệ thống tệp được gắn kết trong dùng. Khi lvm được sử dụng đúng cách, thì không cần phải ngắt kết nối hệ thống tệp để phóng to nó.
+   
+  2. **lvm terminology**
+    - **Physical volumn (pv)**: Ổ đĩa vật lý là bất kỳ thiết bị khối nào (đĩa, phân vùng, thiết bị RAID hoặc thậm chí là iSCSI thiết bị). Tất cả các thiết bị này có thể trở thành thành viên của một nhóm âm lượng. Các lệnh được sử dụng để quản lý âm lượng vật lý bắt đầu bằng pv.
+    - **volume group (vg)**: Nhóm âm lượng là một lớp trừu tượng giữa các thiết bị khối và khối lượng logic. Các lệnh được sử dụng để quản lý một nhóm âm lượng bắt đầu bằng vg.
+    - **logical volume (lv)**: Một khối lượng lô-gic được tạo trong một nhóm ổ đĩa. Khối lượng lô-gic có chứa hệ thống tệp có thể được gắn kết. Việc sử dụng các khối lượng logic tương tự như việc sử dụng các phân vùng và là thực hiện với các lệnh tiêu chuẩn tương tự (MKFS, Mount, FSCK, DF,...). Các lệnh được sử dụng để quản lý một khối lượng logic bắt đầu bằng lv.
+  3. **verifying existing physical volumes**
+    - **lvmdiskscan**: Để có được danh sách các thiết bị chặn có thể được sử dụng với LVM, hãy sử dụng lvmdiskscan. 
+    - **pvs**: Cách dễ nhất để xác minh xem các thiết bị có được biết đến với lvm hay không là bằng lệnh pvs. 
+    - **pvscan**: Lệnh pvscan sẽ quét tất cả các đĩa cho các Khối lượng vật lý hiện có. Thông tin là tương tự như PVS, cộng với việc bạn nhận được một dòng với tổng kích thước.
+    - **pvdisplay**: Sử dụng pvdisplay để biết thêm thông tin về khối lượng vật lý. Bạn cũng có thể sử dụng pvdisplay mà không có một đối số để hiển thị thông tin về tất cả các khối lượng vật lý (lvm).
+  4. **verifying existing volume groups**
+    - **vgs**: Tương tự như pvs là việc sử dụng vgs để hiển thị tổng quan nhanh về tất cả các nhóm âm lượng. Kia chỉ là một nhóm âm lượng trong ảnh chụp màn hình bên dưới, nó được đặt tên là VolGroup00 và gần như dung lượng 16GB.
+    - **vgsvan**: Lệnh vgscan sẽ quét tất cả các ổ đĩa cho các Nhóm ổ đĩa hiện có.
+    - **vgdisplay**: Lệnh vgdisplay sẽ cung cấp cho bạn thông tin chi tiết hơn về một nhóm âm lượng (hoặc giới thiệu về tất cả các nhóm ổ đĩa nếu bạn bỏ qua đối số).
+  5. ****
+    
+    
+
+
+
+
+ 
+ 
+  
   
       
     

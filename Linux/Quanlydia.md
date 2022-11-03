@@ -81,29 +81,29 @@ ghi nhật ký chỉ có trong ext3.
   2. **Hiển thị hệ thống tệp được gắn kết**
    - **df**: Một cách thân thiện hơn với người dùng để xem các hệ thống tệp được gắn kết là df. Lệnh df (diskfree) có thêm lợi ích là hiển thị cho bạn dung lượng trống trên mỗi đĩa được gắn. Thích rất nhiều. Các lệnh Linux, df hỗ trợ chuyển đổi -h để con người dễ đọc hơn đầu ra.
       
-      ![](./image/15.png)
+       ![](./image/15.png)
    
    - **df -h**: Kích thước, dung lượng trống, gigabyte đã sử dụng và tỷ lệ phần trăm và điểm gắn kết của một phân vùng.
    
-      ![](./image/16.png)
+       ![](./image/16.png)
     
   3. **Gắn kết vĩnh viễn**
    - **/etc/fstab**: Bảng hệ thống tệp nằm trong / etc / fstab chứa danh sách các hệ thống tệp, với tùy chọn tự động gắn kết từng người trong số chúng vào thời điểm khởi động.
    
-      ![](./image/17.png)
+       ![](./image/17.png)
    
 V. **Khắc phục sự cố**
  
   1.  **iostat**
    - iostat báo cáo IO tại mỗi khoảng thời gian nhất định. Nó cũng bao gồm một mức sử dụng cpu nhỏ bản tóm tắt.
    
-      ![](./image/18.png)
+       ![](./image/18.png)
       
   2. **vmstat**
    - Trong khi vmstat chủ yếu là một công cụ giám sát bộ nhớ, điều đáng nói ở đây là báo cáo về dữ liệu I / O tóm tắt cho các thiết bị khối và không gian hoán đổi.
    
-      ![](./image/19.png)
-      ![](./image/20.png)
+       ![](./image/19.png)
+       ![](./image/20.png)
       
 VI. ****      
   

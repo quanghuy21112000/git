@@ -1,7 +1,5 @@
 # Quản lý quy trình 
   
-  I. **Giới thiệu về các quy trinh**
-  
    1. **Quản lý quy trình cơ bản**
     
         - **$$ và $ PPID**: Một số biến môi trường shell chứa thông tin về các tiến trình. Biến $$ sẽ giữ ID quy trình hiện tại của bạn và $ 
@@ -41,8 +39,4 @@ hay không. Tiến trình con từ phía trên bây giờ là tiến trình cha 
        -  Định vị id tiến trình của tất cả các lệnh sleep.
        -  Sử dụng một lệnh để giết tất cả các quá trình sleep.
        -  Sử dụng một tiêu chuẩn tiêu chuẩn để tiêu diệt một trong những quá trình sleep.
-       
- II. **Các ưu tiên**
   
-    
-  III. **Giải pháp**

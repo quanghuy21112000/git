@@ -150,34 +150,7 @@ VII. **logical volume management**
      - **pvremove**: Sử dụng lệnh pvremove để xóa khối lượng vật lý khỏi lvm. Các thiết bị có thể không được sử dụng.
      - **pvresize**: Khi bạn sử dụng fdisk để thay đổi kích thước phân vùng trên đĩa, thì bạn phải sử dụng pvresize để làm cho lvm nhận ra kích thước mới của ổ đĩa vật lý đại diện cho phân vùng này.
      - **pvchange**: Với pvchange, bạn có thể ngăn việc phân bổ Khối lượng vật lý trong Nhóm khối lượng mới hoặc Khối lượng lôgic. Điều này có thể hữu ích nếu bạn định xóa một Khối lượng vật lý.
-     - **pvmove**: Với pvmove, bạn có thể di chuyển các Khối lượng logic từ trong một Nhóm khối lượng sang một Khối lượng Vật lý khác. Việc này phải được thực hiện trước khi xóa một Khối lượng vật lý.
-     - 
-    
-
-
-
-
- 
- 
-  
-  
-      
-    
-    
-   
-
-   
-   
-
-   
-
-     
-     
-        
-  
-                                                                                                              
-  
-                                                                                                              
+     - **pvmove**: Với pvmove, bạn có thể di chuyển các Khối lượng logic từ trong một Nhóm khối lượng sang một Khối lượng Vật lý khác. Việc này phải được thực hiện trước khi xóa một Khối lượng vật lý.                                                                                                          
                                                                                                               
                                                                                                               
 

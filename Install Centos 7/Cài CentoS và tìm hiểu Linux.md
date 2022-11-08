@@ -86,7 +86,7 @@
         6. **umount**: unmount tập tin khỏi cây thư mục chính.
         7. **ps**: kiểm tra hệ thống tiến trình đang chạy.
         
-        ![](./icon/18.png)
+   ![](./icon/18.png)
     
         
         

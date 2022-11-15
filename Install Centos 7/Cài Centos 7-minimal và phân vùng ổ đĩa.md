@@ -32,4 +32,42 @@ tại đay chọn đường dẫn `.iso` của Centos 7-minimal. Sau đó chọn
    
    ![](./icon/45.png) 
    
--   
+- Sau 1 khoảng thời gian. Ta setup máy ảo. Đầu tiên chọn ngôn ngữ.
+
+   ![](./icon/46.png)
+
+- Tiếp theo phân vùng ổ đĩa. Chọn như hình bên dưới.
+   
+   ![](./icon/47.png)
+   
+ - Sau đó kích vào ổ đĩa và kích vào option như hình dưới, sau đó bấm **Done**.
+ 
+   ![](./icon/48.png)
+   
+ - Tại cửa sổ mới bấm vào dấu **+**. Sau đó điền thông số cần setup.
+ 
+   ![](./icon/49.png)
+   
+- Chọn option như sau:
+
+   ![](./icon/50.png)
+
+- Add thêm 1 ổ nữa với đường dẫn như sau và chọn option như bên trên:
+ 
+   ![](./icon/51.png)
+
+- Sau khi chọn xong, ta có hình dưới đây.
+
+   ![](./icon/52.png)
+   
+- Sau đó bấm **Done** và chọn **Accept all**. Và tiếp theo chọn **Begin Installing**.
+- Đợi 1 khoảng thời gian để cài đặt. Sau khi cài xong chọn **Reboot** để khởi động lại.
+ 
+   ![](./icon/53.png)
+   
+- Nhập localhost login và password là hoàn thành, 
+
+   ![](./icon/54.png)
+
+
+

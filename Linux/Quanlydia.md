@@ -3,7 +3,7 @@
  I. **Các thiết bị đĩa**
   
   1. **dmesg** 
-   - Thông báo khởi động hạt nhân có thể được nhìn thấy sau khi khởi động bằng dmesg. Vì các thiết bị đĩa cứng 
+   - Thông báo khởi động kernel có thể được nhìn thấy sau khi khởi động bằng dmesg. Vì các thiết bị đĩa cứng 
 được nhân phát hiện trong quá trình khởi động, bạn cũng có thể sử dụng dmesg để tìm thông tin về các 
 thiết bị đĩa.
     
